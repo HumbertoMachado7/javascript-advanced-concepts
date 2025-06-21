@@ -220,7 +220,7 @@ for (let i = 10; i >= 2; i--) {
 i = 0;
 while (i>=2) {
     return "El valor de i es: " + i;
-    i = i + 2
+    i--;
 }
 ```
 
@@ -291,7 +291,7 @@ function imprimirPrimerElemento (arr){
 
 ```
 function imprimirTodoElArray(arr){
-    for (let i = 0, i < arr.length; i++){
+    for (let i = 0; i < arr.length; i++){
         console.log (arr[i]);
     }
 }

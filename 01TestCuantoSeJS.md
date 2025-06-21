@@ -251,13 +251,64 @@ console.log("Desafío finalizado.");
 
 Listas
 1️⃣ Responde las siguientes preguntas en la sección de comentarios:
+
 •	¿Qué es un array?
+
+Es una lista de elementos.
+```
+const array =[];
+const array2 = [1,"Hola", true, false];
+```
+
 •	¿Qué es un objeto?
+
+Es una lista de elementos Pero cada elemento tiene un nombre clave.
+```
+const obj = {
+    nombre: "Humberto",
+    edad: 40
+};
+```
+
 •	¿Cuándo es mejor usar objetos o arrays?
+
+Arrays cuando lo que haremos en un elemento es lo mismo que en todos los demas (la regla se puede incumplor). Mientras que un objeto cuando los nombres de cada elemento son importantes para nuestsro algoritmo.
+
 •	¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
+
+Si. Los arrays pueden guardar objetos.
+Y los objetos pueden guardar arrays entres sus propiedades.
+
 2️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
+
+```
+function imprimirPrimerElemento (arr){
+    console.log (arr[0]);
+} 
+```
+
 3️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
+
+```
+function imprimirTodoElArray(arr){
+    for (let i = 0, i < arr.length; i++){
+        console.log (arr[i]);
+    }
+}
+```
+
 4️⃣ Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
+
+```
+funtion imprimirElementoObjeto (obj){
+    const arr = Object.values(obj);
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
+    }
+}
+```
+
+
 ¿Cómo te fue? 🏆
 ¡Felicidades por completar la prueba de JavaScript! Confío en que hayas completado cada paso y hayas pausado para repasar los temas de los ejercicios que se te complicaron.
 Ahora sí, continúa a la siguiente clase, pero recuerda que ya no puedes abandonar el curso, debes completarlo hasta el final. No importa cuánto tiempo te tome. Yo sé que tú puedes. Y tú deberías de saberlo también.

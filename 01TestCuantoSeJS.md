@@ -52,11 +52,12 @@ console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + n
 
 function saludo (name,lastname,nickname){
     const completeName = name+" " + lastname;
-    return console.log ("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".")
+    return "Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".";
 }
 
 ```
-saludo ("Humberto","Machado","Canario");
+let mensaje = saludo ("Humberto","Machado","Canario");
+console.log(mensaje);
 Mi nombre es Humberto Machado, pero prefiero que me digas Canario.
 ```
 
@@ -207,6 +208,7 @@ for (let i = 0; i < 5; i++) {
 ```
 while (i<5){
     console.log("El valor de i es: " + i);
+    i++;
 }
 ```
 
@@ -215,8 +217,10 @@ for (let i = 10; i >= 2; i--) {
 }
 
 ```
+i = 0;
 while (i>=2) {
-    console.log("El valor de i es: " + i);
+    return "El valor de i es: " + i;
+    i = i + 2
 }
 ```
 

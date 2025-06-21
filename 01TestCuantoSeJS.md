@@ -286,8 +286,3 @@ function imprimirValoresDeObjeto(obj) {
         console.log(valores[i]);
     }
 }
-
-¿Cómo te fue? 🏆
-¡Felicidades por completar la prueba de JavaScript! Confío en que hayas completado cada paso y hayas pausado para repasar los temas de los ejercicios que se te complicaron.
-Ahora sí, continúa a la siguiente clase, pero recuerda que ya no puedes abandonar el curso, debes completarlo hasta el final. No importa cuánto tiempo te tome. Yo sé que tú puedes. Y tú deberías de saberlo también.
-¡Te espero en la siguiente clase para comenzar!

@@ -1,86 +1,115 @@
-# Es hora de poner a prueba cuánto sabes sobre JavaScript
+# Test de Habilidades en JavaScript
 
-Esta lectura es una prueba de JavaScript. A diferencia de un examen, nadie te obligará a nada. Puedes hacer trampa y saltar a la siguiente clase, ese es el camino fácil. Pero tengo mucha fe en ti, confío en que seguirás mis consejos y no avanzarás a la siguiente clase hasta superar esta prueba.
-Instrucciones para tomar esta prueba
-• Evalúa muy críticamente tu conocimiento.
-• Si logras resolver la prueba, no importa cuánto te cueste, puedo asegurarte que tienes todo para continuar a las siguientes clases y tomar el resto del curso.
-• Si no lo logras, no te preocupes, absolutamente nadie puede juzgarte, solo tú. Vuelve al Curso Básico de JavaScript, anota los temas clave donde puedes mejorar, ubica las clases donde puedes aprenderlos y estudia vigorosamente.
-• Es completamente válido hacer búsquedas en Google, cursos y tutoriales de Platzi, incluso usar tu cuaderno de notas sin importar si es físico o virtual.
-Recuerda que el éxito no se mide por cuánto tiempo te toma aprender, esa métrica es relativamente inútil. Mejor concéntrate en completar los cursos de tu ruta de aprendizaje profesional y desarrollar los proyectos que realmente demuestran que dominas cada tecnología.
-¡Mucha suerte!
-Variables y operaciones
-1️⃣ Responde las siguientes preguntas en la sección de comentarios:
-• ¿Qué es una variable y para qué sirve?
-• ¿Cuál es la diferencia entre declarar e inicializar una variable?
-• ¿Cuál es la diferencia entre sumar números y concatenar strings?
-• ¿Cuál operador me permite sumar o concatenar?
-2️⃣ Determina el nombre y tipo de dato para almacenar en variables la siguiente información:
-• Nombre
-• Apellido
-• Nombre de usuario en Platzi
-• Edad
-• Correo electrónico
-• Mayor de edad
-• Dinero ahorrado
-• Deudas
-3️⃣ Traduce a código JavaScript las variables del ejemplo anterior y deja tu código en los comentarios.
-4️⃣ Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:
-• Nombre completo (nombre y apellido)
-• Dinero real (dinero ahorrado menos deudas)
-Funciones
-1️⃣ Responde las siguientes preguntas en la sección de comentarios:
-• ¿Qué es una función?
+Esta es una prueba de autoevaluación para medir tu conocimiento en JavaScript. A diferencia de un examen, el único juez eres tú. El objetivo es identificar áreas de oportunidad para fortalecer tus bases.
 
-    Las funciones nos permiten encapsular (guardar) bloques de codigo para reutilizarlos y ejecturarlos en el futuro.
+### Instrucciones
 
-• ¿Cuándo me sirve usar una función en mi código?
+*   **Evalúa tu conocimiento críticamente.** Si puedes resolver la prueba sin dificultad, tienes una base sólida para continuar.
+*   **Si encuentras dificultades, ¡es una victoria!** Has identificado exactamente qué necesitas repasar. Vuelve a los materiales de estudio sobre esos temas específicos.
+*   **La consulta es válida.** Usar Google, notas o tutoriales es parte del proceso de aprendizaje de un desarrollador profesional. El objetivo no es memorizar, sino saber cómo resolver problemas.
 
-    Nos sirve cuando tenemos variables o bloques de codigo muy parecidos (con cambios que podrian ser parametros y argunetos) que podemos encapsular para reutilicar mas de una vez en el futuro.
+El éxito no se mide por la velocidad, sino por la profundidad del entendimiento.
 
-    Tambien nos sirve para ordenar y mejorar la legibilidad del codigo.
+---
 
-• ¿Cuál es la diferencia entre parámetros y argumentos de una función?
+### Variables y Operaciones
 
-    Las funciones reciben parametros cuando las creamos. Y les enviamos argumentos cuando las ejecutamos.
+**1️⃣ Responde las siguientes preguntas:**
 
-2️⃣ Convierte el siguiente código en una función, pero, cambiando cuando sea necesario las variables constantes por parámetros y argumentos en una función:
+*   **¿Qué es una variable y para qué sirve?**
+*   **¿Cuál es la diferencia entre declarar e inicializar una variable?**
+*   **¿Cuál es la diferencia entre sumar números y concatenar strings?**
+*   **¿Cuál operador me permite sumar o concatenar?**
+
+**2️⃣ Determina el nombre y tipo de dato para la siguiente información:**
+
+*   Nombre: `string`
+*   Apellido: `string`
+*   Nombre de usuario en Platzi: `string`
+*   Edad: `number`
+*   Correo electrónico: `string`
+*   Mayor de edad: `boolean`
+*   Dinero ahorrado: `number`
+*   Deudas: `number`
+
+**3️⃣ Traduce a código JavaScript las variables del punto anterior.**
+
+**4. Calcula e imprime las siguientes variables a partir de las anteriores:**
+
+*   Nombre completo (nombre y apellido).
+*   Dinero real (dinero ahorrado menos deudas).
+
+---
+
+### Funciones
+
+**1️⃣ Responde las siguientes preguntas:**
+
+*   **¿Qué es una función?**
+
+    Las funciones nos permiten encapsular bloques de código para reutilizarlos y ejecutarlos en el futuro.
+
+*   **¿Cuándo me sirve usar una función en mi código?**
+
+    Son útiles cuando tenemos lógica que se repite en varias partes de la aplicación. Encapsular esta lógica en una función mejora la legibilidad, facilita el mantenimiento y reduce la duplicación de código.
+
+*   **¿Cuál es la diferencia entre parámetros y argumentos de una función?**
+
+    Los **parámetros** son las variables que se listan en la definición de la función. Los **argumentos** son los valores reales que se pasan a la función cuando esta es invocada.
+
+**2️⃣ Convierte el siguiente código en una función pura:**
+
+*Código original:*
+```javascript
 const name = "Juan David";
 const lastname = "Castro Gallego";
 const completeName = name + lastname;
 const nickname = "juandc";
 
 console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".");
+```
 
-function saludo (name,lastname,nickname){
-    const completeName = name+" " + lastname;
-    return "Mi nombre es " + completeName + ", pero prefiero que me digas " + nickname + ".";
+*Solución:*
+```javascript
+/**
+ * Crea un saludo personalizado.
+ * @param {string} name - El nombre de la persona.
+ * @param {string} lastname - El apellido de la persona.
+ * @param {string} nickname - El apodo de la persona.
+ * @returns {string} Un mensaje de saludo completo.
+ */
+function crearSaludo(name, lastname, nickname) {
+    const completeName = `${name} ${lastname}`;
+    return `Mi nombre es ${completeName}, pero prefiero que me digas ${nickname}.`;
 }
 
-    ```
-    let mensaje = saludo ("Humberto","Machado","Canario");
-    console.log(mensaje);
-    Mi nombre es Humberto Machado, pero prefiero que me digas Canario.
-    ```
+// La función se invoca y su resultado se almacena antes de imprimirlo.
+const mensaje = crearSaludo("Humberto", "Machado", "Canario");
+console.log(mensaje);
+```
 
-Condicionales
+---
 
-1️⃣ Responde las siguientes preguntas en la sección de comentarios:
+### Condicionales
 
-• ¿Qué es un condicional?
+**1️⃣ Responde las siguientes preguntas:**
 
-    Son la forma en que ejecutamos un bloque de codigo  u otro dependiendo de algunba condicion o validacion.
+*   **¿Qué es un condicional?**
 
-• ¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?
+    Son estructuras de control que permiten ejecutar diferentes bloques de código dependiendo de si una condición se evalúa como verdadera o falsa.
 
-    if (else y else if), switch.
-    El condicional if (con else y else if) nos permite hace validaciones completamente distintas (si asi queremos) en cada validacion o condional.
-    En cambio en el switch, todos los cases se comparan con la misma variable o condicion que definimos en el switch. Por eso es importante escribir break al terminar cada case, en caso que quiera terminar el bloque de comparaciones con el case. 
+*   **¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?**
 
-• ¿Puedo combinar funciones y condicionales?
+    `if/else if/else` y `switch`. La estructura `if` permite evaluar condiciones completamente diferentes y complejas en cada bloque. El `switch`, en cambio, compara una única variable contra múltiples valores (`case`), lo cual es más eficiente y legible para esos escenarios específicos.
 
-    Si. Las funciones pueden encapsular cualquier bloque de codigo, incluyendo condicionales.
+*   **¿Puedo combinar funciones y condicionales?**
 
-2️⃣ Replica el comportamiento del siguiente código que usa la sentencia switch utilizando if, else y else if:
+    Sí. Las funciones pueden contener cualquier tipo de lógica, incluyendo condicionales, para tomar decisiones basadas en sus parámetros o en el estado del programa.
+
+**2️⃣ Replica el comportamiento de `switch` con `if/else if`:**
+
+*Código original (`switch`):*
+```javascript
 const tipoDeSuscripcion = "Basic";
 
 switch (tipoDeSuscripcion) {
@@ -90,222 +119,173 @@ switch (tipoDeSuscripcion) {
    case "Basic":
        console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
        break;
-   case "Expert":
-       console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
-       break;
-   case "ExpertPlus":
-       console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
-       break;
+   // ... y otros casos
 }
+```
 
-    ```
-        const tipoDeSuscripcion = "Basic';
+*Solución (`if/else if`):*
+```javascript
+const tipoSuscripcion = "Basic";
 
-        if (tipoDeSuscripcion == "Basic"){
-            console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
-            } else if (tipoDeSuscripcion == "Expert") {
-                console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
-            } else if (tipoDeSuscripcion == "ExpertPlus"){
-                console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
-        }
-    ```
+if (tipoSuscripcion === "Free") {
+    console.log("Solo puedes tomar los cursos gratis");
+} else if (tipoSuscripcion === "Basic") {
+    console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+} else if (tipoSuscripcion === "Expert") {
+    console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+} else if (tipoSuscripcion === "ExpertPlus") {
+    console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+} else {
+    console.log("Tipo de suscripción no reconocido.");
+}
+```
 
-3️⃣ Replica el comportamiento de tu condicional anterior con if, else y else if, pero ahora solo con if (sin else ni else if).
-    ```
-        const tipoDeSuscripcionActual = "Expert";
-        /**
-        *Función que imprime un mensaje basado en el tipo de suscripción,
-        * usando únicamente sentencias `if`.
-        *@param {string} tipo - El tipo de suscripción (ej. "Free", "Basic").
+**3️⃣ Bonus: Implementa la lógica anterior con un objeto (la forma más profesional):**
+
+```javascript
+const mensajesPorSuscripcion = {
+    Free: "Solo puedes tomar los cursos gratis",
+    Basic: "Puedes tomar casi todos los cursos de Platzi durante un mes",
+    Expert: "Puedes tomar casi todos los cursos de Platzi durante un año",
+    ExpertPlus: "Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año",
+};
+
+/**
+ * Obtiene el mensaje de suscripción usando un objeto como mapa.
+ * @param {string} tipo - El tipo de suscripción.
+ * @returns {string} El mensaje correspondiente.
  */
+function obtenerMensaje(tipo) {
+    // Si el tipo existe como clave, devuelve el mensaje. Si no, devuelve un mensaje por defecto.
+    return mensajesPorSuscripcion[tipo] || "Lo sentimos, ese tipo de suscripción no existe.";
+}
 
-    function imprimirMensajeConSoloIfs(tipo) {
-        // Nota: Esta aproximación es ineficiente porque el programa debe
-        // evaluar CADA una de las condiciones, incluso si ya encontró la correcta.
-        if (tipo === 'Free') {
-            console.log("Solo puedes tomar los cursos gratis");
-        }
-        if (tipo === 'Basic') {
-            console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
-        }
-        if (tipo === 'Expert') {
-            console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
-        }
-        if (tipo === 'ExpertPlus') {
-            console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
-        }
-    }
+const suscripcionActual = "Expert";
+const mensajeFinal = obtenerMensaje(suscripcionActual);
+console.log(mensajeFinal);
+```
 
-    console.log("--- Ejecución con 'solo ifs' ---");
-    imprimirMensajeConSoloIfs(tipoDeSuscripcionActual);
-    console.log("-----------------------------\n");
-    ```
+---
 
-💡 Bonus: si ya eres una experta o experto en el lenguaje, te desafío a comentar cómo replicar este comportamiento con arrays u objetos y un solo condicional. 😏
+### Ciclos
 
-    /**
-    * Esta es la solución recomendada y profesional.
-    * Separa los datos (los mensajes) de la lógica (la función).
-    */
+**1️⃣ Responde las siguientes preguntas:**
 
-    // Paso 1: Creamos un objeto que actúa como un "diccionario" o "mapa".
-    // Las llaves son los tipos de suscripción y los valores son los mensajes.
-    const mensajesPorSuscripcion = {
-        Free: "Solo puedes tomar los cursos gratis",
-        Basic: "Puedes tomar casi todos los cursos de Platzi durante un mes",
-        Expert: "Puedes tomar casi todos los cursos de Platzi durante un año",
-        ExpertPlus: "Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año",
-    // Podríamos añadir un caso por defecto aquí si quisiéramos
-    // default: "No tienes una suscripción activa, ¡anímate a empezar!",
-    };
+*   **¿Qué es un ciclo?**
 
-    /**
-     * Función que obtiene el mensaje de suscripción usando el objeto `mensajesPorSuscripcion`.
-     * @param {string} tipo - El tipo de suscripción.
-     * @returns {string} - El mensaje correspondiente o uno por defecto si no se encuentra.
-     */
-    function obtenerMensajeConObjeto(tipo) {
-        // Paso 2: Usamos un solo condicional para manejar todos los casos.
-        // Si la llave `tipo` existe en nuestro objeto, `mensajesPorSuscripcion[tipo]`
-        // devolverá el mensaje (un valor "truthy"). Si no existe, devolverá `undefined` (un valor "falsy").
-        if (mensajesPorSuscripcion[tipo]) {
-            return mensajesPorSuscripcion[tipo];
-        } else {
-        // Este es nuestro caso por defecto, si el tipo de suscripción no existe.
-        return "Lo sentimos, ese tipo de suscripción no existe.";
-        }
-    }
+    Es una estructura que repite un bloque de código mientras una condición especificada se mantenga verdadera.
 
-    console.log("--- Ejecución con el método 'Bonus' (Objetos) ---");
-    const mensajeFinal = obtenerMensajeConObjeto(tipoDeSuscripcionActual);
-    console.log(mensajeFinal);
+*   **¿Qué tipos de ciclos existen en JavaScript?**
 
-Ciclos
-1️⃣ Responde las siguientes preguntas en la sección de comentarios:
+    Los principales son `for`, `while`, y `do...while`. También existen `for...of` (para iterar sobre valores de iterables como arrays) y `for...in` (para iterar sobre las claves de un objeto).
 
-• ¿Qué es un ciclo?
+*   **¿Qué es un ciclo infinito y por qué es un problema?**
 
-    La forma de ejecutar un bloque de codigo hasta que se cumpla cierta condicion.
+    Ocurre cuando la condición de un ciclo nunca se vuelve falsa. Esto causa que el programa se bloquee, consumiendo el 100% de los recursos de la CPU asignados, y eventualmente puede hacer que el navegador o el entorno de ejecución colapse.
 
-• ¿Qué tipos de ciclos existen en JavaScript?
+*   **¿Puedo mezclar ciclos y condicionales?**
 
-    While, for, do while.
+    Sí, es una práctica extremadamente común. Se usan condicionales dentro de los ciclos para tomar decisiones en cada iteración.
 
-• ¿Qué es un ciclo infinito y por qué es un problema?
+**2️⃣ Replica los ciclos `for` usando `while`:**
 
-    Es cuando la validacion de nuestros condicionales nunca se cumple y termina danñando la aplicacion. (El navegador ya no puede mas de tanta ejecucion de ese bloque de codigo)
-
-• ¿Puedo mezclar ciclos y condicionales?
-
-    Si, aunque los ciclos son una especie de condicionales, nada nos impide agregar mas condicionales dentro del ciclo.
-
-2️⃣ Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
+*Ciclo 1:*
+```javascript
+// FOR
 for (let i = 0; i < 5; i++) {
-    console.log("El valor de i es: " + i);
+    console.log(`El valor de i es: ${i}`);
 }
 
-    ```
-        while (i<5){
-            console.log("El valor de i es: " + i);
-            i++;
-        }
-    ```
+// WHILE (versión correcta)
+let j = 0; // 1. Inicialización
+while (j < 5) { // 2. Condición
+    console.log(`El valor de j es: ${j}`);
+    j++; // 3. Incremento
+}
+```
 
+*Ciclo 2:*
+```javascript
+// FOR
 for (let i = 10; i >= 2; i--) {
-    console.log("El valor de i es: " + i);
+    console.log(`El valor de i es: ${i}`);
 }
 
-    ```
-    i = 0;
-    while (i>=2) {
-        return "El valor de i es: " + i;
-        i--;
-    }
-    ```
-
-3️⃣ Escribe un código en JavaScript que le pregunte a los usuarios cuánto es 2 + 2. Si responden bien, mostramos un mensaje de felicitaciones, pero si responden mal, volvemos a empezar.
-💡 Pista: puedes usar la función prompt de JavaScript.
-    ```
-
-    console.log("Iniciando el desafío...");
-    while (true) {
-    const respuestaUsuario = prompt("¿Cuánto es 2 + 2?");
-    if (respuestaUsuario === null) {
-        console.log("El usuario canceló el desafío. Saliendo del bucle.");
-        break; // Salimos del bucle para no continuar.
-    }
-
-    if (respuestaUsuario.trim() === '4') {
-        alert("¡Felicitaciones! 🎉 La respuesta es correcta.");
-        console.log("El usuario respondió correctamente.");
-        break; // La respuesta es correcta, así que salimos del bucle.
-    }
-    alert("Respuesta incorrecta. ¡Intenta de nuevo!");
+// WHILE (versión correcta)
+let k = 10; // 1. Inicialización
+while (k >= 2) { // 2. Condición
+    console.log(`El valor de k es: ${k}`);
+    k--; // 3. Decremento
 }
+```
 
-    console.log("Desafío finalizado.");
-    ```
+---
 
-Listas
-1️⃣ Responde las siguientes preguntas en la sección de comentarios:
+### Listas (Arrays y Objetos)
 
-• ¿Qué es un array?
+**1️⃣ Responde las siguientes preguntas:**
 
-Es una lista de elementos.
-    ```
+*   **¿Qué es un array?**
 
-    const array =[];
-    const array2 = [1,"Hola", true, false];
-    ```
+    Es una estructura de datos ordenada, similar a una lista, que puede contener elementos de cualquier tipo. Se accede a sus elementos a través de un índice numérico (empezando en 0).
+    `const miArray = [1, "hola", true];`
 
-• ¿Qué es un objeto?
+*   **¿Qué es un objeto?**
 
-Es una lista de elementos Pero cada elemento tiene un nombre clave.
-    ```
+    Es una colección de pares clave-valor. Permite almacenar datos más complejos y estructurados, donde cada valor está asociado a un nombre de propiedad (la clave).
+    `const miObjeto = { nombre: "Humberto", edad: 40 };`
 
-    const obj = {
-        nombre: "Humberto",
-        edad: 40
-    };
-    ```
+*   **¿Cuándo es mejor usar objetos o arrays?**
 
-• ¿Cuándo es mejor usar objetos o arrays?
+    Usa **arrays** cuando el orden de los elementos es importante y cuando vas a realizar las mismas operaciones en la mayoría de ellos. Usa **objetos** cuando necesitas una estructura con etiquetas descriptivas (claves) para cada valor, y el orden no es la principal preocupación.
 
-    Arrays cuando lo que haremos en un elemento es lo mismo que en todos los demas (la regla se puede incumplor). Mientras que un objeto cuando los nombres de cada elemento son importantes para nuestsro algoritmo.
+*   **¿Puedo mezclar arrays con objetos?**
 
-• ¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
+    Sí, es muy común. Un array puede contener objetos, y un objeto puede tener arrays como valores de sus propiedades.
 
-    Si. Los arrays pueden guardar objetos.
-    Y los objetos pueden guardar arrays entres sus propiedades.
+**2️⃣ Crea una función que imprima el primer elemento de cualquier array:**
 
-2️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
-    ```
-
-    function imprimirPrimerElemento (arr){
-        console.log (arr[0]);
-    } 
-    ```
-
-3️⃣ Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
-    ```
-
-    function imprimirTodoElArray(arr){
-        for (let i = 0; i < arr.length; i++){
-            console.log (arr[i]);
-        }
+```javascript
+/**
+ * Imprime el primer elemento de un array en la consola.
+ * @param {Array<any>} arr - El array de entrada.
+ */
+function imprimirPrimerElemento(arr) {
+    if (arr && arr.length > 0) {
+        console.log(arr);
+    } else {
+        console.log("El array está vacío o no es válido.");
     }
-    ```
+}
+```
 
-4️⃣ Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
-    ```
+**3️⃣ Crea una función que imprima todos los elementos de un array:**
 
-    funtion imprimirElementoObjeto (obj){
-    const arr = Object.values(obj);
-        for (let i = 0; i < arr.length; i++) {
-            console.log(arr[i]);
-        }
+```javascript
+/**
+ * Imprime cada elemento de un array, uno por línea.
+ * @param {Array<any>} arr - El array de entrada.
+ */
+function imprimirElementosDeArray(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
     }
-    ```
+}
+```
+
+**4️⃣ Crea una función que imprima los valores de un objeto:**
+
+```javascript
+/**
+ * Imprime cada valor de un objeto, uno por línea.
+ * @param {object} obj - El objeto de entrada.
+ */
+function imprimirValoresDeObjeto(obj) {
+    const valores = Object.values(obj);
+    for (let i = 0; i < valores.length; i++) {
+        console.log(valores[i]);
+    }
+}
 
 ¿Cómo te fue? 🏆
 ¡Felicidades por completar la prueba de JavaScript! Confío en que hayas completado cada paso y hayas pausado para repasar los temas de los ejercicios que se te complicaron.

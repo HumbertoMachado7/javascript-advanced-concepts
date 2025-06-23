@@ -12,7 +12,7 @@ A portfolio of notes, exercises, and projects from an advanced JavaScript course
 
 2.  **DOM Manipulation**
     *   A standalone project focused on basic DOM manipulation.
-    *   **View Repository:** [`HumbertoMachado7/02DOM_Manipulacion`](https://github.com/HumbertoMachado7/02DOM_Manipulacion)
+    *   **View Repository:** [`02DOM_Manipulacion`](https://github.com/HumbertoMachado7/02DOM_Manipulacion)
 
 ---
 

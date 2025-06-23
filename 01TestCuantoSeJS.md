@@ -285,7 +285,8 @@ function imprimirValoresDeObjeto(obj) {
     for (let i = 0; i < valores.length; i++) {
         console.log(valores[i]);
     }
-}
+};
+```
 
 ---
 

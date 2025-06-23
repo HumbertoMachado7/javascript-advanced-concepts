@@ -16,4 +16,4 @@ A portfolio of notes, exercises, and projects from an advanced JavaScript course
 
 ---
 
-### [⬅️ Back to Humberto Machado's Profile Index](https://github.com/HumbertoMachado7)s
+### [⬅️ Back to Humberto Machado's Profile Index](https://github.com/HumbertoMachado7)

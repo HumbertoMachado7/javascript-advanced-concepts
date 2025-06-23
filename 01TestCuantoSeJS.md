@@ -285,8 +285,8 @@ function imprimirValoresDeObjeto(obj) {
     for (let i = 0; i < valores.length; i++) {
         console.log(valores[i]);
     }
-}```
+}
 
 ---
 
-> [⬅️ Volver al repositorio principal: javascript-advanced-concepts](https://github.com/HumbertoMachado7/javascript-advanced-concepts)
+### [⬅️ Volver al repositorio principal: javascript-advanced-concepts](https://github.com/HumbertoMachado7/javascript-advanced-concepts)
